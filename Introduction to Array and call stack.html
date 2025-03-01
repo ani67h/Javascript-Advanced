@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HELLO FARDIN!</h2>
+    <p id="far"></p>
+    <p id="pr">Choose one way to blackmail Fardin.</p>
+    <p id="bye"></p>
+    <p id="blackmail"></p>
+    <p id="mysecondpop"></p>
+    <p id="fine">How many times you need to kill fardin?</p>
+    <p id="fardin ke maro"></p>
+    <script>
+        var FARDIN = [
+            "How are you?",
+            "Fardin die.",
+            "Be carefull."
+        ];
+        document.getElementById("far").innerHTML=FARDIN[1]
+
+        var fruits = ["Gmail","Instagram","Messenger","Twitter"];
+        document.getElementById("bye").innerHTML = fruits.join("*");
+        document.getElementById("blackmail").innerHTML = fruits.pop();
+        document.getElementById("mysecondpop").innerHTML=fruits; 
+
+        function add(a,b) {
+            return a + b;
+        }
+        function average(a,b) {
+            return add(a,b) / 2;
+        }
+        let result = average(10,20);
+        document.getElementById("fardin ke maro").innerHTML = result;
+    </script>
+</body>
+</html>
