@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=
+
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+<script src=
+
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+
+</script>
+</head>
+<body>
+    <div class="container">
+    <h1 id="first"></h1> <br> <br> <br>
+    <p id="q1"></p>
+    <p id="o1"></p>
+    <p id="a1"></p> <br> <br>
+    <p id="q2"></p>
+    <p id="o2"></p>
+    <p id="a2"></p> <br> <br>
+    <p id="q3"></p>
+    <p id="o3"></p>
+    <p id="a3"></p> <br> <br>
+    <p id="q4"></p>
+    <p id="o4"></p>
+    <p id="a4"></p> <br> <br>
+    <p id="q5"></p>
+    <p id="o5"></p>
+    <p id="a5"></p> <br> <br>
+    <script>
+      document.getElementById("first").innerHTML="DEAR FELOW IT'S THE TIME TO DO SOME BRAINSTORMS! LET'S HOW CAN IT STORM YOU BRAIN!"
+
+      var options1 =  ["Adam Smith",  "Karl Marx" ,  "John Keynes",  "David Ricardo"];
+      var choice1 = "Adam Smith"
+      document.getElementById("q1").innerHTML = "Question 1 : " + "Who is considered the Father of Economics?" + "<br>"
+      document.getElementById("o1").innerHTML = options1.join("*")
+      document.getElementById("a1").innerHTML = "Answer 1 : " + choice1
+      
+      var options2 = ["2","11","7" ,"9"]
+      document.getElementById("q2").innerHTML = "Question 2 : " +"If f(x) = 2x² + 3x - 5, what is f(2)?"
+      document.getElementById("o2").innerHTML = options2.join("*")
+      document.getElementById("a2").innerHTML = "Answer 2 : " + options2.pop()
+
+      var options3 = ["Clotting", "Digestion", "Fighting infections", "Oxygen transport"]
+      document.getElementById("q3").innerHTML = "Question 3 : What is the function of hemoglobin in the blood?"
+      document.getElementById("o3").innerHTML = options3.join("*")
+      document.getElementById("a3").innerHTML = "Answer 3 : "+ options3.pop()
+
+      var options4 = ["0", "1", "-1", "undefined"];
+      var choice2 = "0"
+      document.getElementById("q4").innerHTML = "Question 4 : " + "The value of log(1) to any base is:" + "<br>" 
+      document.getElementById("o4").innerHTML = options4.join("*");
+      document.getElementById("a4").innerHTML = "Answer 4 : " + choice2
+
+     var options5 = ["Electromagnetic force", "Nuclear force", "Gravitational force", "Frictional force"];
+     var choice3 = "Gravitational force"
+     document.getElementById("q5").innerHTML = "Questions 5 : Which force keeps planets in orbit around the Sun?" 
+     document.getElementById("o5").innerHTML = options5.join("*")
+     document.getElementById("a5").innerHTML = "Answer 5 : " + choice3
+    </script>
+    </div>
+</body>
+</html>
