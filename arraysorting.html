@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array sorting in JavaScript</h2>
+    <p>Press the button to sort the array in ascending order or descending order.</p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+
+    <p id="result"></p>
+
+
+    <script>
+
+        var number = [20, 90, 500, 23, 37, 65];
+        document.getElementById("result").innerHTML = number;
+
+        function ascending() {
+            number.sort(function(a,b) {return a-b}) ;
+            document.getElementById("result").innerHTML = number;
+        }
+
+        
+        function descending() {
+            number.sort(function(a,b) {return b-a}) ;
+            document.getElementById("result").innerHTML = number;
+        }
+
+    </script>
+</body>
+</html>
