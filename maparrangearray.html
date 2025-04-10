@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Map and arrange an array</h2>
+    <p id="result"></p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+
+    <script>
+
+        var numbers = [69,43,21,98,35,12,55];
+
+        function myFunction(num) {
+            return num * 9;
+        }
+
+        var newarray = numbers.map(myFunction);
+
+        document.getElementById("result").innerHTML = newarray;
+
+        function ascending() {
+            newarray.sort(function(a,b){return a - b});
+            document.getElementById("result").innerHTML = newarray;
+        }
+
+        
+        function descending() {
+            newarray.sort(function(a,b){return b - a});
+            document.getElementById("result").innerHTML = newarray;
+        }
+
+    </script>
+</body>
+</html>
